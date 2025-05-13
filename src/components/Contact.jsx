@@ -6,6 +6,25 @@ export default function Contact() {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
+
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -13,9 +32,10 @@ export default function Contact() {
           name="contact"
           method="POST"
           data-netlify="true"
+          onSubmit={handleSubmit}
           className="lg:w-2/3 md:w-1/2 flex flex-col md:mx-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          {/* Netlify hidden input */}
+          {/* Hidden input for form identification */}
           <input type="hidden" name="form-name" value="contact" />
 
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
@@ -56,10 +76,7 @@ export default function Contact() {
           </div>
 
           <div className="relative mb-4">
-            <label
-              htmlFor="message"
-              className="leading-7 text-sm text-gray-800"
-            >
+            <label htmlFor="message" className="leading-7 text-sm text-gray-800">
               Message
             </label>
             <textarea
