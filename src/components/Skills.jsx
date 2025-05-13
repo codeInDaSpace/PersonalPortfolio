@@ -15,24 +15,31 @@ export default function Skills() {
                         These are the Skills and Technologies I've gained through school, internships, and personal projects.
                     </p>
                 </div>
-                <div className="flex justify-between items-center">
-                <div className="w-1/3">
+
+
+                <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+
+                    <div className="w-full md:w-1/3 mb-6 md:mb-0">
                         <img
-                            className="object-cover object-center rounded transform translate-x-12"
+                            className="object-cover object-center rounded mx-auto md:mx-0 md:translate-x-12"
                             alt="Astronaut"
                             src="./lilAstro.webp"
                         />
                     </div>
-                    <div className="flex flex-wrap w-1/2">
+
+                    <div className="flex flex-wrap w-full md:w-2/3">
                         {skills.map((skill) => (
-                            <div key={skill.language} className="p-2 sm:w-1/2 w-full transform -translate-x-12">
+                            <div
+                                key={skill.language}
+                                className="p-2 sm:w-1/2 w-full md:-translate-x-12"
+                            >
                                 <div className="bg-orange-300 rounded flex p-4 h-full items-center">
                                     <img
                                         alt={skill.language}
                                         src={skill.languageIcon}
-                                        className="text-green-400 w-6 h-6 flex-shrink-0 mr-4"
+                                        className="w-6 h-6 flex-shrink-0 mr-4"
                                     />
-                                    <span className="title-font font-medium text-gray-800 ">
+                                    <span className="title-font font-medium text-gray-800">
                                         {skill.language}
                                     </span>
                                 </div>
