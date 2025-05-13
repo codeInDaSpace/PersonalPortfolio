@@ -7,11 +7,21 @@
     <title>Alyssa Trejo's Portfolio</title>
   </head>
   <body>
+    <form 
+      name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      netlify-honeypot="bot-field"
+      class="hidden-form">
+      
+      <input type="text" name="bot-field" style="display:none" />
 
-    <form name="contact" netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <!-- Hidden field that makes the form identifiable to Netlify -->
+      <input type="hidden" name="form-name" value="contact" />
     </form>
 
     <div id="root"></div>
