@@ -16,7 +16,7 @@ export default function Skills() {
                     </p>
                 </div>
                 <div className="flex justify-between items-center">
-                <div className="w-1/3">
+                    <div className="w-1/3">
                         <img
                             className="object-cover object-center rounded transform translate-x-12"
                             alt="Astronaut"
@@ -25,14 +25,14 @@ export default function Skills() {
                     </div>
                     <div className="flex flex-wrap w-1/2">
                         {skills.map((skill) => (
-                            <div key={skill.language} className="p-2 sm:w-1/2 w-full transform -translate-x-12">
+                            <div key={skill.language} className="p-2 w-full sm:w-1/2">
                                 <div className="bg-orange-300 rounded flex p-4 h-full items-center">
                                     <img
                                         alt={skill.language}
                                         src={skill.languageIcon}
                                         className="text-green-400 w-6 h-6 flex-shrink-0 mr-4"
                                     />
-                                    <span className="title-font font-medium text-gray-800 ">
+                                    <span className="title-font font-medium text-gray-800">
                                         {skill.language}
                                     </span>
                                 </div>
