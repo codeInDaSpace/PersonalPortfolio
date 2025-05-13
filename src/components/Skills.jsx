@@ -16,7 +16,7 @@ export default function Skills() {
                     </p>
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between items-center">
-                    <div className="w-full sm:w-1/3 mb-4 sm:mb-0">
+                    <div className="w-full sm:w-1/3 mb-4 sm:mb-0 lg:ml-10">
                         <img
                             className="object-cover object-center rounded"
                             alt="Astronaut"
