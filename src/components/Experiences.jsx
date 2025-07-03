@@ -8,13 +8,13 @@ export default function Experiences(){
         <section id="experiences">
             <div className="container px-5 py-10 mx-auto text-center">
                 <OfficeBuildingIcon className="w-10 inline-block mb-4" />
-                <h1 className="sm:text-4xl text-3xl font-medium title-font  text-gray-800 mb-12">
+                <h1 className="sm:text-4xl text-3xl font-medium font-mono  text-gray-800 mb-12">
                     Work Experience
                 </h1>
                 <div className="flex flex-wrap m-4">
                     {experiences.map((experience)=> (
                         <div className="p-4 md:w-1/2 w-full">
-                        <div className="h-full bg-orange-300 bg-opacity-40 p-8 rounded">
+                        <div className="h-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 bg-opacity-40 p-8 rounded">
                         <div className="inline-flex items-center">
                                 <span className="flex-grow flex flex-col pl-4 pr-4">
                                     <span className="title-font font-medium text-gray-800 text-2xl w-full text-center">

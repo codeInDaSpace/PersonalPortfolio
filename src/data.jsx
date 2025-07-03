@@ -90,7 +90,7 @@ export const experiences = [
 
     },
         {
-        position:"Software Development Intern",
+        position:"Software Engineer Intern",
         company:"Citi",
         desc:"Incoming SWE intern at Citibank during the summer of 2025",
         icon:"./citiLo.gif"

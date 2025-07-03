@@ -6,7 +6,7 @@ export default function About() {
     <section id="about">
       <div className="container mx-auto flex justify-between items-center px-10 py-20 md:flex-row flex-col">
         <div className="lg:flex-grow md:w-2/3 w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-7xl text-xl mb-4 font-medium text-gray-800">
+          <h1 className="font-mono font-medium sm:text-7xl text-3xl text-gray-800">
           Hi, I'm Alyssa!
             <br /><Typewriter text ="I like to code" delay={100} />
           </h1>
@@ -18,7 +18,7 @@ export default function About() {
           <div className="flex justify-center">
             <a
               href="#connect"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              className="inline-flex text-white bg-emerald-600  border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               Connect or Follow
             </a>
           </div>

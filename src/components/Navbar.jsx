@@ -1,33 +1,58 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useState } from "react";
 
-export default function Navbar(){
-    return (
-        <header className="bg-orange-300 md:sticky top-0 z-10">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a className="title-font font-medium text-gray-800 mb-4 md:mb-0">
-                    <a href="#about" className="ml-0 text-2xl">
-                        Alyssa Trejo
-                    </a>
-                </a>
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:ml-4 pr-2 pl-3 md:border-gray-700     flex flex-wrap items-center text-base justify-center">
-                    <a href="#experiences" className="mr-5 hover:text-white">
-                        Work Experience
-                    </a>
-                    <a href="#projects" className="mr-5 hover:text-white">
-                        Past Projects
-                    </a>
-                    <a href="#skills" className="mr-5 hover:text-white">
-                        Skills
-                    </a>
-                </nav>
-                <a
-                href="#contact"
-                className="inline-flex items-center bg-orange-300 border-0 py-1 px-3 focus:outline-none hover:text-white rounded text-base mt-4 md:mt-0">
-                Hire Me
-                <ArrowRightIcon className="w-4 h-4 ml-1" />
-                </a>
-            </div>
-        </header>
-    );
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-amber-50/75 shadow">
+      <div className="text-4xl font-mono pl-8">Alyssa Trejo</div>
+
+      {/* Larger hamburger icon */}
+      <div
+        className="flex flex-col justify-between w-10 h-8 cursor-pointer"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        <span className="block h-1 bg-gray-800 rounded"></span>
+        <span className="block h-1 bg-gray-800 rounded"></span>
+        <span className="block h-1 bg-gray-800 rounded"></span>
+      </div>
+
+      {/* Bigger dropdown */}
+      {menuOpen && (
+        <div className="absolute top-full right-0 mt-2 w-56 bg-amber-50 shadow rounded p-6 z-50">
+          <a
+            href="#about"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg"
+          >
+            About
+          </a>
+          <a
+            href="#experiences"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg"
+          >
+            Experiences
+          </a>
+          <a
+            href="#skills"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg"
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg"
+          >
+            Projects
+          </a>
+          <a
+            href="contact"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg"
+          >
+            Connect
+          </a>
+        </div>
+      )}
+    </nav>
+  );
 }
