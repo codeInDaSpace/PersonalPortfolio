@@ -45,7 +45,7 @@ export default function Navbar() {
             Projects
           </a>
           <a
-            href="connect"
+            href="#connect"
             className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg  "
           >
             Connect
