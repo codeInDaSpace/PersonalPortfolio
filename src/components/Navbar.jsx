@@ -17,7 +17,6 @@ export default function Navbar() {
         <span className="block h-1 bg-gray-800 rounded"></span>
       </div>
 
-      {/* Bigger dropdown */}
       {menuOpen && (
         <div className="absolute top-full right-0 mt-2 w-56 bg-amber-50 shadow rounded p-6 z-50">
           <a
@@ -45,8 +44,8 @@ export default function Navbar() {
             Projects
           </a>
           <a
-            href="contact"
-            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg  "
+            href="connect"
+            className="flex items-center justify-between py-2 px-4 hover:bg-gray-100 rounded text-lg font-mono"
           >
             Connect
           </a>

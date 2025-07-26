@@ -43,7 +43,7 @@ export default function Contact() {
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5 text-center">
-            If you'd like to get into contact for potential opportunities, feel
+            If you'd like to get in contact for potential opportunities, feel
             free to fill out this form!
           </p>
 
@@ -57,7 +57,7 @@ export default function Contact() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
 
@@ -71,7 +71,7 @@ export default function Contact() {
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
 
@@ -84,7 +84,7 @@ export default function Contact() {
               name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border focus:border-indigo-500 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded border focus:border-indigo-500 focus:ring-indigo-900 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
 
