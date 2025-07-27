@@ -39,9 +39,9 @@ export default function Contact() {
           <input type="hidden" name="form-name" value="contact" />
 
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
-          <h2 className="leading-relaxed text-base text-gray-800 sm:text-4xl text-3xl font-medium font-mono text-center">
+          <h1 className="leading-relaxed text-base text-gray-800 sm:text-4xl text-3xl font-medium font-mono text-center">
             Hire Me
-          </h2>
+          </h1>
           <p className="leading-relaxed mb-5 text-center">
             If you'd like to get in contact for potential opportunities, feel
             free to fill out this form!
