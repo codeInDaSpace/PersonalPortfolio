@@ -39,7 +39,7 @@ export default function Contact() {
           <input type="hidden" name="form-name" value="contact" />
 
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
-          <h1 className="sm:text-4xl text-3xl font-medium font-mono text-gray-800 mb-4">
+          <h1 className="sm:text-4xl text-3xl font-medium font-mono text-gray-800 mb-4 text-center">
             Hire Me
           </h1>
           <p className="leading-relaxed mb-5 text-center">
