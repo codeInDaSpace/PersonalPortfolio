@@ -8,10 +8,10 @@ export default function Projects () {
             <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-                        <h1 className="sm:text-4xl text-3xl font-medium font-mono mb-4 text-gray-800">
+                        <h1 className="sm:text-4xl text-3xl font-baloo font-medium mb-4 text-gray-800">
                             Projects I've Built
                         </h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base ">
+                        <p className="lg:w-2/3 font-mono mx-auto leading-relaxed text-base ">
                             I've worked on multiple projects exploring different areas of software engineering, including data handling, bot development, and full-stack applications. 
                             Some of these projects include a Discord music bot, a PDF financial data locator, and a theme park database management system.
                         </p>
@@ -35,7 +35,7 @@ export default function Projects () {
                         <h1 className="title-font text-lg font-medium text-gray-800 mb-3">
                             {project.title}
                         </h1>
-                        <p className="leading-relaxed">{project.description}</p>
+                        <p className="font-roboto leading-relaxed">{project.description}</p>
                     </div>
                 </div>
                 </a>

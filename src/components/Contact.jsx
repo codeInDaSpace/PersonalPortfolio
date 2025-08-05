@@ -35,14 +35,14 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="lg:w-2/3 md:w-1/2 flex flex-col md:mx-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          {/* Hidden input for form identification */}
+          
           <input type="hidden" name="form-name" value="contact" />
 
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
-          <h1 className="sm:text-4xl text-3xl font-medium font-mono text-gray-800 mb-4 text-center">
+          <h1 className="sm:text-4xl text-3xl font-medium font-baloo text-gray-800 mb-4 text-center">
             Hire Me
           </h1>
-          <p className="leading-relaxed mb-5 text-center">
+          <p className="leading-relaxed mb-5 text-center font-mono">
             If you'd like to get in contact for potential opportunities, feel
             free to fill out this form!
           </p>

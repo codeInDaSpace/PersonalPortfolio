@@ -8,7 +8,7 @@ export default function Experiences(){
         <section id="experiences">
             <div className="container px-5 py-10 mx-auto text-center">
                 <OfficeBuildingIcon className="w-10 inline-block mb-4" />
-                <h1 className="sm:text-4xl text-3xl font-medium font-mono  text-gray-800 mb-12">
+                <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-12">
                     Work Experience
                 </h1>
                 <div className="flex flex-wrap m-4">
@@ -32,7 +32,7 @@ export default function Experiences(){
                                     className="w-16 h-12 rounded-full flex-shrink-0 object-cover object-center ml-auto"
                                 />
                                 </div>
-                            <p className="leading-relaxed mb-6 pt-2">{experience.desc}</p>
+                            <p className="font-roboto leading-relaxed mb-6 pt-2">{experience.desc}</p>
                             </div>
                             </div>
                     ))}

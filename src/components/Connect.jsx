@@ -8,10 +8,10 @@ export default function Connect(){
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <ChipIcon className="w-10 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium font-mono text-gray-800 mb-4">
+                    <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-4">
                         Connect With Me!
                     </h1>
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+                    <p className="font-mono text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                     Follow my Linkedin or Github to see more of my work or connect with me.
                     </p>
                 </div>
