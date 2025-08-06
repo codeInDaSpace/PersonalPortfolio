@@ -53,9 +53,9 @@ export default function Navbar() {
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
       >
-        <span className="block h-1 bg-gray-800 rounded"></span>
-        <span className="block h-1 bg-gray-800 rounded"></span>
-        <span className="block h-1 bg-gray-800 rounded"></span>
+        <span className="block h-1.5 bg-gray-800 rounded"></span>
+        <span className="block h-1.5 bg-gray-800 rounded"></span>
+        <span className="block h-1.5 bg-gray-800 rounded"></span>
       </button>
 
 
