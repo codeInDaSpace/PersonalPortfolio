@@ -11,7 +11,7 @@ export const projects = [
             title:"Themepark Database Management System",
             subtitle:"React, ASP.Net, and MySQL",
             description:
-                "A theme park database management system called GojoLand. It includes multiple views, such as a visitor view, employee view, and admin view, with user authentication for each. It uses React on the frontend and ASP.NET on the backend, which connects to the MySQL database.",
+                "A theme park database management system called GojoLand. It includes multiple views, such as a visitor view, employee view, and admin view, each with user authentication and unique functionality. It uses React on the frontend and ASP.NET on the backend, which connects to the MySQL database.",
             image:"./themepark.png",
             link:"https://github.com/Colep39/themepark-ms"
             },
