@@ -46,8 +46,10 @@ export default function Navbar() {
       </div>
 
 
-      <button
+      <div
         ref={buttonRef}
+        role="button"
+        tabIndex="0"
         className="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
@@ -56,7 +58,8 @@ export default function Navbar() {
         <span className="block h-1.5 bg-gray-800 rounded"></span>
         <span className="block h-1.5 bg-gray-800 rounded"></span>
         <span className="block h-1.5 bg-gray-800 rounded"></span>
-      </button>
+      </div>
+
 
 
       {menuOpen && (
