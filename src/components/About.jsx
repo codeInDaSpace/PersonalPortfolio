@@ -3,7 +3,7 @@ import Typewriter from "../Typewriter";
 
 export default function About() {
   return (
-    <section id="about" className="py-44">
+    <section id="about" className="py-24 md:py-44">
       <div className="container mx-auto flex justify-between items-center px-10 md:flex-row flex-col">
         <div className="lg:flex-grow md:w-2/3 w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="font-baloo font-medium sm:text-7xl text-3xl text-gray-800 min-h-[4.5rem] sm:min-h-[9rem]">
