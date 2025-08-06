@@ -48,7 +48,7 @@ export default function Contact() {
           </p>
 
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-800">
+            <label htmlFor="name" className="font-roboto leading-7 text-sm text-gray-800">
               Name
             </label>
             <input
@@ -62,7 +62,7 @@ export default function Contact() {
           </div>
 
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-800">
+            <label htmlFor="email" className="font-roboto leading-7 text-sm text-gray-800">
               Email
             </label>
             <input
@@ -76,7 +76,7 @@ export default function Contact() {
           </div>
 
           <div className="relative mb-4">
-            <label htmlFor="message" className="leading-7 text-sm text-gray-800">
+            <label htmlFor="message" className="font-roboto leading-7 text-sm text-gray-800">
               Message
             </label>
             <textarea
@@ -90,7 +90,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="text-white bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="text-white font-roboto bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Submit
           </button>

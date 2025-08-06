@@ -28,7 +28,7 @@ export default function Connect(){
                                     href={follow.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="title-font font-medium text-gray-800 shover:underline"
+                                    className="font-roboto title-font font-medium text-gray-800 shover:underline"
                                 >
                                     {follow.name}
                                 </a>
