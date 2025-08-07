@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const navLinks = [
-  { href: "#about", title: "About" },
+  { href: "#projects", title: "Projects" },
   { href: "#experiences", title: "Experiences" },
   { href: "#skills", title: "Skills" },
-  { href: "#projects", title: "Projects" },
   { href: "#connect", title: "Connect" },
 ];
 
@@ -34,8 +33,11 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-amber-50/75 shadow">
       <div className="text-2xl sm:text-4xl font-baloo font-medium pl-4 sm:pl-8">
-        Alyssa Trejo
+        <a href="#about" className="text-gray-800 hover:text-emerald-600">
+          Alyssa Trejo
+        </a>
       </div>
+
 
       <div className="hidden md:flex space-x-6">
         {navLinks.map((link) => (

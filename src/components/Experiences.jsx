@@ -14,7 +14,7 @@ export default function Experiences(){
                 <div className="flex flex-wrap m-4">
                     {experiences.map((experience)=> (
                         <div className="p-4 md:w-1/2 w-full">
-                        <div className="h-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 bg-opacity-40 p-8 rounded">
+                        <div className="h-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 bg-opacity-40 p-8 rounded-xl">
                         <div className="inline-flex items-center">
                                 <span className="flex-grow flex flex-col pl-4 pr-4">
                                     <span className="title-font font-medium text-gray-800 text-2xl w-full text-center">

@@ -26,7 +26,7 @@ export default function Skills() {
                     <div className="flex flex-wrap w-full sm:w-1/2">
                         {skills.map((skill) => (
                             <div key={skill.language} className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded flex p-4 h-full items-center">
+                                <div className="bg-white/80 hover:bg-amber-50 border-4 border-amber-200 flex p-4 h-full items-center rounded-xl">
                                     <img
                                         alt={skill.language}
                                         src={skill.languageIcon}
