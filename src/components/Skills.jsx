@@ -1,9 +1,17 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
+import { motion } from 'framer-motion';
 import { skills } from "../data";
 
 export default function Skills() {
     return (
+
+        <motion.div
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+        >
         <section id="skills">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
@@ -42,5 +50,6 @@ export default function Skills() {
                 </div>
             </div>
         </section>
+        </motion.div>
     );
 }

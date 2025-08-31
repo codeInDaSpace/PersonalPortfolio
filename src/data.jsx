@@ -85,14 +85,14 @@ export const experiences = [
     {
         position:"Support Analyst Intern",
         company:"Lamons",
-        desc:"I developed and deployed a custom financial data widget for Lamons’s Salesforce application using Apex, SOQL, JavaScript, and HTML, enhancing account visibility. I also queried and managed SQL databases while using Tableau for data extraction, validation, updates, and visualization. Additionally, I debugged label printing functions within the in-house C# application. At the end of my internship, I presented a potential business opportunity to the entire executive board, including the CEO and CTO, as part of a strategic initiative pitch.",
+        desc:"I developed and deployed a custom financial data widget for Lamons’s Salesforce application using Apex, SOQL, JavaScript, and HTML, improving account visibility. I also managed SQL databases and leveraged Tableau for data extraction, validation, updates, and visualization. Additionally, I debugged label printing functions in an in-house C# application and concluded my internship by presenting a strategic business opportunity to the executive board, including the CEO and CTO.",
         icon:"./lamons.png"
 
     },
         {
         position:"Software Engineer Intern",
         company:"Citi",
-        desc:"Incoming SWE intern at Citibank during the summer of 2025",
+        desc:"I led the full technical development of a full-stack self-service portal from the ground up, utilizing Dash, Pandas, GraphQL, and CSS Bootstrap. I designed and implemented tools to track datacenter network standards, compliance, and service usage, creating a scalable and efficient solution. The platform is planned to be adopted by 40,000+ employees and is currently being maintained and expanded by other teams following the completion of my internship.",
         icon:"./citiLo.gif"
 
     }

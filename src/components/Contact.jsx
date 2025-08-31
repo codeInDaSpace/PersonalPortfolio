@@ -1,5 +1,6 @@
 import React from "react";
 import { BriefcaseIcon } from "@heroicons/react/solid";
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -26,6 +27,12 @@ export default function Contact() {
   }
 
   return (
+    <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{ duration: 1.0, ease: "easeOut" }}
+>
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <form
@@ -97,5 +104,6 @@ export default function Contact() {
         </form>
       </div>
     </section>
+    </motion.div>
   );
 }

@@ -1,13 +1,20 @@
 import React from "react";
 import { TerminalIcon, OfficeBuildingIcon } from "@heroicons/react/solid";
+import { motion } from 'framer-motion';
 import {experiences } from "../data";
 
 
 export default function Experiences(){
     return (
+         <motion.div
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+        >
         <section id="experiences">
             <div className="container px-5 py-10 mx-auto text-center">
-                <OfficeBuildingIcon className="w-10 inline-block mb-4" />
+                <OfficeBuildingIcon className="w-10 inline-block mb-4 lg:px-40 lg:px-40" />
                 <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-12">
                     Work Experience
                 </h1>
@@ -39,5 +46,6 @@ export default function Experiences(){
                 </div>
             </div>
         </section>
+        </motion.div>
     )
 }

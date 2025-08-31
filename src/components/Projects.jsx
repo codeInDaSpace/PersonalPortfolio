@@ -1,9 +1,17 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
+import { motion } from 'framer-motion';
 import { projects } from "../data";
 
 export default function Projects () {
+
     return ( 
+        <motion.div
+        initial={{ opacity: 0, y: 50 }} 
+        whileInView={{ opacity: 1, y: 0 }} 
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+        >
         <section id="projects" className="text-gray-800 body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:px-40">
                 <div className="flex flex-col w-full mb-20">
@@ -45,6 +53,6 @@ export default function Projects () {
             </div>
 
         </section>
-
+        </motion.div>
     );
 }
