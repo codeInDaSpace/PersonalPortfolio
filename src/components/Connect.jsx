@@ -1,20 +1,20 @@
 import React from "react";
-import {BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { UserGroupIcon } from "@heroicons/react/24/solid";
 import { motion } from 'framer-motion';
 import {follows} from "../data";
 
 export default function Connect(){
     return (
-        <motion.div
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-        >
         <section id="connect">
             <div className="container px-5 py-10 mx-auto">
+                 <motion.div
+                initial={{ opacity: 0, y: 50 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true, amount: 0.5 }}
+               transition={{ duration: 0.8, ease: "easeOut" }} 
+              >
                 <div className="text-center mb-20">
-                    <ChipIcon className="w-10 inline-block mb-4" />
+                    <UserGroupIcon className="w-10 inline-block mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-4">
                         Connect With Me!
                     </h1>
@@ -22,6 +22,7 @@ export default function Connect(){
                     Follow my Linkedin or Github to see more of my work or connect with me.
                     </p>
                 </div>
+                </motion.div>
                 <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
                     {follows.map((follow)=> (
                         <div key={follow.name} className="p-2 sm:w-1/2 w-full">
@@ -47,6 +48,6 @@ export default function Connect(){
 
 
         </section>
-        </motion.div>
+   
     )
 }

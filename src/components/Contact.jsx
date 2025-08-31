@@ -1,5 +1,5 @@
 import React from "react";
-import { BriefcaseIcon } from "@heroicons/react/solid";
+import { BriefcaseIcon } from "@heroicons/react/24/solid";
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -27,13 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <motion.div
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.5 }}
-  transition={{ duration: 1.0, ease: "easeOut" }}
->
-    <section id="contact" className="relative">
+        <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <form
           name="contact"
@@ -44,7 +38,12 @@ export default function Contact() {
         >
           
           <input type="hidden" name="form-name" value="contact" />
-
+         <motion.div
+          initial={{ opacity: 0, y: 50 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeOut" }} 
+                                >
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
           <h1 className="sm:text-4xl text-3xl font-medium font-baloo text-gray-800 mb-4 text-center">
             Hire Me
@@ -53,6 +52,7 @@ export default function Contact() {
             If you'd like to get in contact for potential opportunities, feel
             free to fill out this form!
           </p>
+          </motion.div>
 
           <div className="relative mb-4">
             <label htmlFor="name" className="font-roboto leading-7 text-sm text-gray-800">
@@ -104,6 +104,6 @@ export default function Contact() {
         </form>
       </div>
     </section>
-    </motion.div>
+
   );
 }

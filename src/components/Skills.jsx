@@ -1,21 +1,20 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { CpuChipIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { motion } from 'framer-motion';
 import { skills } from "../data";
 
 export default function Skills() {
     return (
-
-        <motion.div
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-        >
         <section id="skills">
             <div className="container px-5 py-10 mx-auto">
+                 <motion.div
+                        initial={{ opacity: 0, y: 50 }} 
+                        whileInView={{ opacity: 1, y: 0 }} 
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }} 
+                        >
                 <div className="text-center mb-20">
-                    <ChipIcon className="w-10 inline-block mb-4" />
+                    <CpuChipIcon className="w-10 inline-block mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-4">
                         Skills &amp; Technologies
                     </h1>
@@ -23,6 +22,7 @@ export default function Skills() {
                         These are the Skills and Technologies I've gained through school, internships, and personal projects.
                     </p>
                 </div>
+                </motion.div>
                 <div className="flex flex-col sm:flex-row justify-between items-center">
                     <div className="w-full sm:w-1/3 mb-4 sm:mb-0 lg:ml-10">
                         <img
@@ -50,6 +50,5 @@ export default function Skills() {
                 </div>
             </div>
         </section>
-        </motion.div>
     );
 }
