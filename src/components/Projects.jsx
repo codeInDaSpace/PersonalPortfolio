@@ -6,14 +6,14 @@ import { projects } from "../data";
 export default function Projects () {
 
     return ( 
-        <motion.div
+        <section id="projects" className="text-gray-800 body-font">
+            <div className="container px-5 mx-auto text-center lg:px-40 lg:px-40">
+                 <motion.div
         initial={{ opacity: 0, y: 50 }} 
         whileInView={{ opacity: 1, y: 0 }} 
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, ease: "easeOut" }} 
         >
-        <section id="projects" className="text-gray-800 body-font">
-            <div className="container px-5 py-10 mx-auto text-center lg:px-40 lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
                         <h1 className="sm:text-4xl text-3xl font-baloo font-medium mb-4 text-gray-800">
@@ -24,6 +24,7 @@ export default function Projects () {
                             Some of these projects include a Discord music bot, a PDF financial data locator, and a theme park database management system.
                         </p>
                 </div>
+                </motion.div>
                 <div className="flex flex-wrap -m-4">
                 {projects.map((project) => (
                     <a
@@ -53,6 +54,6 @@ export default function Projects () {
             </div>
 
         </section>
-        </motion.div>
+      
     );
 }
