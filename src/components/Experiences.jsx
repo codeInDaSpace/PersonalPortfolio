@@ -7,7 +7,7 @@ import {experiences } from "../data";
 export default function Experiences(){
     return (
         <section id="experiences">
-            <div className="container px-5 py-10 mx-auto text-center">
+            <div className="container px-5 pt-24 pb-12 mx-auto text-center">
                 <motion.div
                         initial={{ opacity: 0, y: 50 }} 
                         whileInView={{ opacity: 1, y: 0 }} 
