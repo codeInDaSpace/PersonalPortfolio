@@ -77,10 +77,11 @@ export const skills=
 
 export const experiences = [
     {
-        position:"Research Intern",
-        company:"Rice University",
-        desc:"I developed Python programs utilizing OCR, Pandas, and OS libraries to extract and organize corporate donation data efficiently. Additionally, I conducted research on critical minerals essential for sustainable energy, creating detailed market projection charts. My work also involved compiling philanthropic and financial reports to support strategic development and decision-making.",
-        icon:"./rice.png"
+        position:"Software Engineer Intern",
+        company:"Citi",
+        desc:"I led the full technical development of a full-stack self-service portal from the ground up, utilizing Dash, Pandas, GraphQL, and CSS Bootstrap. I designed and implemented tools to track datacenter network standards, compliance, and service usage, creating a scalable and efficient solution. The platform is planned to be adopted by 40,000+ employees and is currently being maintained and expanded by other teams following the completion of my internship.",
+        icon:"./citiLo.gif"
+
     },
     {
         position:"Support Analyst Intern",
@@ -89,13 +90,13 @@ export const experiences = [
         icon:"./lamons.png"
 
     },
-        {
-        position:"Software Engineer Intern",
-        company:"Citi",
-        desc:"I led the full technical development of a full-stack self-service portal from the ground up, utilizing Dash, Pandas, GraphQL, and CSS Bootstrap. I designed and implemented tools to track datacenter network standards, compliance, and service usage, creating a scalable and efficient solution. The platform is planned to be adopted by 40,000+ employees and is currently being maintained and expanded by other teams following the completion of my internship.",
-        icon:"./citiLo.gif"
-
+    {
+        position:"Research Intern",
+        company:"Rice University",
+        desc:"I developed Python programs utilizing OCR, Pandas, and OS libraries to extract and organize corporate donation data efficiently. Additionally, I conducted research on critical minerals essential for sustainable energy, creating detailed market projection charts. My work also involved compiling philanthropic and financial reports to support strategic development and decision-making.",
+        icon:"./rice.png"
     }
+
 
 ];
 

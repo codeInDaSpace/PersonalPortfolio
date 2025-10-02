@@ -9,11 +9,11 @@ export default function Projects () {
         <section id="projects" className="text-gray-800 body-font">
             <div className="container px-5 mx-auto text-center lg:px-40 lg:px-40">
                  <motion.div
-        initial={{ opacity: 0, y: 50 }} 
-        whileInView={{ opacity: 1, y: 0 }} 
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-        >
+                initial={{ opacity: 0, y: 50 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.8, ease: "easeOut" }} 
+                >
                 <div className="flex flex-col w-full mb-20">
                     <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
                         <h1 className="sm:text-4xl text-3xl font-baloo font-medium mb-4 text-gray-800">
