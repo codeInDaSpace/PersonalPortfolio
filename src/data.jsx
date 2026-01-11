@@ -20,7 +20,7 @@ export const projects = [
             subtitle:"Python, Pandas, and Re",
             description:
                 "A Python based search opinion engine that pulls relevant Amazon reviews based on user queries. It uses pandas and regex to clean and tokenize the data, then runs three different methods including a basic boolean filter, a proximity matcher that checks how close aspect and opinion words appear, and a sentiment method that also looks at the review rating to make sure the tone actually matches the query.",
-            image:"./download.jpg",
+            image:"./amazon.jpg",
             link:"https://github.com/codeInDaSpace/AmazonOpinionEngine"
         },
         {
