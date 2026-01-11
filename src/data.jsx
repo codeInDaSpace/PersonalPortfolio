@@ -16,13 +16,21 @@ export const projects = [
             link:"https://github.com/Colep39/themepark-ms"
             },
         {
+            title:" Amazon Review Opinion Search Engine",
+            subtitle:"Python, Pandas, and Re",
+            description:
+                "A Python based search opinion engine that pulls relevant Amazon reviews based on user queries. It uses pandas and regex to clean and tokenize the data, then runs three different methods including a basic boolean filter, a proximity matcher that checks how close aspect and opinion words appear, and a sentiment method that also looks at the review rating to make sure the tone actually matches the query.",
+            image:"./download.jpg",
+            link:"https://github.com/codeInDaSpace/AmazonOpinionEngine"
+        },
+        {
             title:"PDF Financial Data Locator",
             subtitle:"Python, Pandas, and Pytesseract",
             description:
                 "A program that extracts financial data from PDFs, such as IRS forms, annual reports, and sustainability reports. I developed this program during my time as a research intern at Rice University to help my director. Unfortunately I no longer have access to the program, so this will just link you to my GitHub instead.",
             image: "./python.png",
             link:"https://github.com/codeInDaSpace"
-        },
+        }
 ];
 
 export const skills= 
