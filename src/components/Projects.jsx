@@ -20,8 +20,8 @@ export default function Projects () {
                             Projects I've Built
                         </h1>
                         <p className="lg:w-2/3 font-mono mx-auto leading-relaxed text-base ">
-                            I've worked on multiple projects exploring different areas of software engineering, including data handling, bot development, and full-stack applications. 
-                            Some of these projects include a Discord music bot, a PDF financial data locator, and a theme park database management system.
+                            I've worked on multiple projects exploring different areas of software engineering, including data handling, bot development, full-stack applications, and natural language processing. 
+                            Some of these projects include a Discord music bot, a theme park database management system, a PDF financial data locator, and an Amazon review opinion search engine
                         </p>
                 </div>
                 </motion.div>
