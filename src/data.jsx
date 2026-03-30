@@ -27,7 +27,7 @@ export const projects = [
         title:"PDF Financial Data Locator",
         subtitle:"Python, Pandas, and Pytesseract",
         description:
-            "Extracts financial data from PDFs such as IRS forms and reports. Developed during a Rice University research internship; the GitHub link provides access to code samples.",
+            "Extracts financial data from PDFs such as IRS forms and reports. Developed during a Rice University research internship; code unavailable, see GitHub profile instead",
         image: "./python.png",
         link:"https://github.com/codeInDaSpace"
     }
