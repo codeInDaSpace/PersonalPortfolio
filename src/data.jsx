@@ -3,34 +3,34 @@ export const projects = [
         title:"Sigmund Bot",
         subtitle: "Python, Discord.py, Spotify and Youtube API",
         description:
-            "A Discord bot exclusively for my sorority named after our mascot. It has music and image capability, along with numerous commands. I use primarily the discord.py library with the help of the Spotify API and YouTube API while using asynchronous programming to ensure a fluid experience when listening, queueing, and pausing music.",
+            "A Discord bot for my sorority with music playback, image commands, and other interactive features. Built with discord.py and uses Spotify and YouTube APIs with async programming for smooth performance.",
         image: "./sigmund.png",
         link: "https://github.com/codeInDaSpace/Sigmund"
-        },
-        {
-            title:"Themepark Database Management System",
-            subtitle:"React, ASP.Net, and MySQL",
-            description:
-                "A theme park database management system called GojoLand. It includes multiple views, such as a visitor view, employee view, and admin view, each with user authentication and unique functionality. It uses React on the frontend and ASP.NET on the backend, which connects to the MySQL database.",
-            image:"./themepark.png",
-            link:"https://github.com/Colep39/themepark-ms"
-            },
-        {
-            title:" Amazon Review Opinion Search Engine",
-            subtitle:"Python, Pandas, and Re",
-            description:
-                "A Python based search opinion engine that pulls relevant Amazon reviews based on user queries. It uses pandas and regex to clean and tokenize the data, then runs three different methods including a basic boolean filter, a proximity matcher that checks how close aspect and opinion words appear, and a sentiment method that also looks at the review rating to make sure the tone actually matches the query.",
-            image:"./amazon.jpg",
-            link:"https://github.com/codeInDaSpace/AmazonOpinionEngine"
-        },
-        {
-            title:"PDF Financial Data Locator",
-            subtitle:"Python, Pandas, and Pytesseract",
-            description:
-                "A program that extracts financial data from PDFs, such as IRS forms, annual reports, and sustainability reports. I developed this program during my time as a research intern at Rice University to help my director. Unfortunately I no longer have access to the program, so this will just link you to my GitHub instead.",
-            image: "./python.png",
-            link:"https://github.com/codeInDaSpace"
-        }
+    },
+    {
+        title:"Themepark Database Management System",
+        subtitle:"React, ASP.Net, and MySQL",
+        description:
+            "GojoLand is a theme park database with multiple views for visitors, employees, and admins. Implements user authentication, React frontend, ASP.NET backend, and connects to a MySQL database.",
+        image:"./themepark.png",
+        link:"https://github.com/Colep39/themepark-ms"
+    },
+    {
+        title:"Amazon Review Opinion Search Engine",
+        subtitle:"Python, Pandas, and Re",
+        description:
+            "A Python tool that retrieves relevant Amazon reviews based on queries. Cleans data using pandas and regex, and applies boolean, proximity, and sentiment-based filtering methods.",
+        image:"./amazon.jpg",
+        link:"https://github.com/codeInDaSpace/AmazonOpinionEngine"
+    },
+    {
+        title:"PDF Financial Data Locator",
+        subtitle:"Python, Pandas, and Pytesseract",
+        description:
+            "Extracts financial data from PDFs such as IRS forms and reports. Developed during a Rice University research internship; the GitHub link provides access to code samples.",
+        image: "./python.png",
+        link:"https://github.com/codeInDaSpace"
+    }
 ];
 
 export const skills= 
@@ -86,22 +86,21 @@ export const skills=
 export const experiences = [
     {
         position:"Software Engineer Intern",
-        company:"Citi",
-        desc:"I led the full technical development of a full-stack self-service portal from the ground up, utilizing Dash, Pandas, GraphQL, and CSS Bootstrap. I designed and implemented tools to track datacenter network standards, compliance, and service usage, creating a scalable and efficient solution. The platform is planned to be adopted by 40,000+ employees and is currently being maintained and expanded by other teams following the completion of my internship.",
-        icon:"./citiLo.gif"
-
+        company:"CitiBank",
+        desc:"I led development of a full stack self service portal using Dash, Pandas, GraphQL, and Bootstrap to track datacenter network standards, compliance, and service usage. Built for scalability, it is planned for 40,000 plus employees and is now maintained and expanded by other teams.",
+        icon:"./citibank-logo-freelogovectors.net_-640x400.png"
     },
     {
         position:"Support Analyst Intern",
         company:"Lamons",
-        desc:"I developed and deployed a custom financial data widget for Lamons’s Salesforce application using Apex, SOQL, JavaScript, and HTML, improving account visibility. I also managed SQL databases and leveraged Tableau for data extraction, validation, updates, and visualization. Additionally, I debugged label printing functions in an in-house C# application and concluded my internship by presenting a strategic business opportunity to the executive board, including the CEO and CTO.",
+        desc:"Developed and deployed a custom financial data widget in Salesforce using Apex, SOQL, JavaScript, and HTML to enhance account visibility. Managed SQL databases, used Tableau for data analysis and validation, debugged a C# label printing system, and presented a strategic business opportunity to executive leadership.",
         icon:"./lamons.png"
 
     },
     {
         position:"Research Intern",
         company:"Rice University",
-        desc:"I developed Python programs utilizing OCR, Pandas, and OS libraries to extract and organize corporate donation data efficiently. Additionally, I conducted research on critical minerals essential for sustainable energy, creating detailed market projection charts. My work also involved compiling philanthropic and financial reports to support strategic development and decision-making.",
+        desc:"Developed Python programs using OCR and Pandas to extract and organize corporate donation data. Researched critical minerals for sustainable energy, created market projection charts, and compiled financial and philanthropic reports to support strategic decisions.",
         icon:"./rice.png"
     }
 

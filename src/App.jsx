@@ -3,7 +3,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experiences from "./components/Experiences";
-import Connnect from "./components/Connect";
+import Connect from "./components/Connect";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 
@@ -16,7 +16,7 @@ export default function App() {
       <Experiences />
       <Skills />
       <Contact />
-      <Connnect />
+      <Connect />
     </main>
   );
 }

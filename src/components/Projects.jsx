@@ -16,13 +16,18 @@ export default function Projects () {
                 >
                 <div className="flex flex-col w-full mb-20">
                     <CodeBracketIcon className="mx-auto inline-block w-10 mb-4" />
-                        <h1 className="sm:text-4xl text-3xl font-baloo font-medium mb-4 text-gray-800">
-                            Projects I've Built
+                        <h1 className="sm:text-5xl text-3xl font-baloo font-medium mb-4 text-gray-800">
+                        Projects I've <span className="relative inline-block">
+                            Built
+                            {/* This is the subtle highlight that matches your 'Alyssa' header */}
+                            <span className="absolute bottom-1 left-0 w-full h-3 bg-emerald-100/60 -z-10 rounded-full"></span>
+                        </span>
                         </h1>
-                        <p className="lg:w-2/3 font-mono mx-auto leading-relaxed text-base ">
-                            I've worked on multiple projects exploring different areas of software engineering, including data handling, bot development, full-stack applications, and natural language processing. 
-                            Some of these projects include a Discord music bot, a theme park database management system, a PDF financial data locator, and an Amazon review opinion search engine
-                        </p>
+                      <p className="lg:w-2/3 font-mono mx-auto leading-relaxed text-gray-600 text-lg">
+                                    I’ve built a range of systems, from <span className="text-emerald-700/80 font-semibold">complex data tools</span> and 
+                                    discord bots to <span className="text-emerald-700/80 font-semibold">full-stack apps</span> and NLP research. 
+                                    Each project was a chance to solve real problems and level up my technical skills.
+                                </p>
                 </div>
                 </motion.div>
                 <div className="flex flex-wrap -m-4">
@@ -30,22 +35,40 @@ export default function Projects () {
                     <a
                         href={project.link}
                         key={project.image}
-                        className="sm:w-1/2 w-100 p-4 mx-auto">
-                <div className="flex relative flex-col">
-                    <img
-                        alt="gallery"
-                        className="w-full h-48 object-cover rounded-t-xl"
-                        src={project.image}
-                    />
-                    <div className="px-8 py-10 relative z-0 w-full border-4 bg-white/80 hover:bg-amber-50 border-4 border-amber-200 text-gray-800 shadow-sm hover:shadow-md transition rounded-xl">
-                        <h2 className="tracking-widest text-sm title-font font-medium text-green-700 mb-1">
-                            {project.subtitle}
-                        </h2>
-                        <h1 className="title-font text-lg font-medium text-gray-800 mb-3">
-                            {project.title}
-                        </h1>
-                        <p className="font-roboto leading-relaxed">{project.description}</p>
+                        className="sm:w-1/2 w-100 p-4 mx-auto group">
+                <div className="flex flex-col h-full group bg-transparent transition-all duration-500 hover:-translate-y-2">
+                    {/* Centered Image Wrapper with no background */}
+                    <div className="w-full h-56 flex items-center justify-center p-4">
+                        <img
+                            alt={project.title}
+                            className="max-w-full max-h-full object-contain drop-shadow-sm group-hover:drop-shadow-xl transition-all duration-500"
+                            src={project.image}
+                        />
                     </div>
+                    {/* 3. TEXT SECTION - The white card containing your text */}
+<div className="bg-white border border-gray-100 rounded-3xl p-8 flex flex-col flex-grow items-center text-center shadow-sm group-hover:shadow-2xl group-hover:shadow-emerald-500/10 transition-all duration-500">
+    
+    {/* Subtitle (Mono) */}
+    <h2 className="tracking-widest text-xs font-mono font-bold text-emerald-600 uppercase mb-3">
+        {project.subtitle}
+    </h2>
+
+    {/* Title (Baloo) */}
+    <h1 className="text-2xl font-baloo font-medium text-gray-800 mb-4 px-2">
+        {project.title}
+    </h1>
+
+    {/* Description (Mono) - max-w-sm keeps it perfectly centered */}
+    <p className="font-mono text-sm text-gray-500 leading-relaxed flex-grow max-w-sm">
+        {project.description}
+    </p>
+
+    {/* View Project Link (Appears on Hover) */}
+    <div className="mt-8 flex items-center justify-center opacity-0 group-hover:opacity-100 text-emerald-600 transition-all duration-500 text-xs font-mono font-bold uppercase tracking-widest">
+        <span>View Project</span>
+        <span className="ml-2 transition-transform group-hover:translate-x-3">→</span>
+    </div>
+</div>
                 </div>
                 </a>
                 ))}

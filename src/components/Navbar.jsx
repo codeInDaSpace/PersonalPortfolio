@@ -31,53 +31,75 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-amber-50/75 shadow">
-      <div className="text-2xl sm:text-4xl font-baloo font-medium pl-4 sm:pl-8">
-        <a href="#about" className="text-gray-800 hover:text-emerald-600">
-          Alyssa Trejo
-        </a>
-      </div>
-
-
-      <div className="hidden md:flex space-x-6">
-        {navLinks.map((link) => (
-          <a key={link.href} href={link.href} className="text-lg font-roboto hover:text-emerald-600">
-            {link.title}
+    <nav className="fixed top-4 left-0 right-0 z-50 px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 bg-white/70 backdrop-blur-xl border border-gray-100 rounded-full shadow-lg shadow-gray-200/50">
+        <div className="text-xl sm:text-2xl font-baloo font-medium">
+          <a href="#about" className="text-gray-800 hover:text-emerald-600 transition-colors">
+            Alyssa Trejo
           </a>
-        ))}
-      </div>
+        </div>
 
 
-      <div
-        ref={buttonRef}
-        role="button"
-        tabIndex="0"
-        className="md:hidden flex flex-col justify-between w-8 h-6 cursor-pointer"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
-        aria-expanded={menuOpen}
-      >
-        <span className="block h-1.5 bg-gray-800 rounded"></span>
-        <span className="block h-1.5 bg-gray-800 rounded"></span>
-        <span className="block h-1.5 bg-gray-800 rounded"></span>
-      </div>
+      {/* NEW CODE */}
+<div className="hidden md:flex items-center space-x-8">
+  {navLinks.map((link) => (
+    <a 
+      key={link.href} 
+      href={link.href} 
+      className="text-sm font-mono font-bold uppercase tracking-widest text-gray-600 hover:text-emerald-600 transition-colors"
+    >
+      {link.title}
+    </a>
+  ))}
+  <a href="#contact" className="bg-gray-800 text-white font-mono text-xs font-bold uppercase tracking-widest px-5 py-2 rounded-full hover:bg-emerald-600 transition-all shadow-md">
+    Let's Talk
+  </a>
+</div>
+
+
+     {/* NEW CODE */}
+        <div
+          ref={buttonRef}
+          className="md:hidden flex flex-col justify-between w-6 h-4 cursor-pointer group"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className={`block h-0.5 w-full bg-gray-800 rounded transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+          <span className={`block h-0.5 w-full bg-gray-800 rounded transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block h-0.5 w-full bg-gray-800 rounded transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+        </div>
 
 
 
       {menuOpen && (
-        <div ref={menuRef} className="absolute top-full right-0 mt-2 w-56 bg-amber-50 shadow rounded p-4 z-50 md:hidden">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="block py-2 px-4 hover:bg-gray-100 rounded text-lg font-roboto"
-              onClick={() => setMenuOpen(false)} 
-            >
-              {link.title}
-            </a>
-          ))}
-        </div>
-      )}
+  <div 
+    ref={menuRef} 
+    className="absolute top-16 right-0 w-64 bg-white border border-gray-100 shadow-2xl rounded-2xl p-4 z-50 md:hidden animate-in fade-in zoom-in duration-200"
+  >
+    <div className="flex flex-col space-y-2">
+      {navLinks.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          className="block py-3 px-4 hover:bg-emerald-50 rounded-xl text-sm font-mono font-bold uppercase tracking-widest text-gray-700 hover:text-emerald-600 transition-colors"
+          onClick={() => setMenuOpen(false)} 
+        >
+          {link.title}
+        </a>
+      ))}
+      
+      {/* Adding the CTA to the mobile menu too for consistency */}
+      <hr className="border-gray-100 my-2" />
+      <a 
+        href="#contact" 
+        className="block text-center bg-gray-800 text-white font-mono text-xs font-bold uppercase tracking-widest py-3 rounded-xl hover:bg-emerald-600 transition-all"
+        onClick={() => setMenuOpen(false)}
+      >
+        Let's Talk
+      </a>
+    </div>
+  </div>
+)}
+      </div>
     </nav>
   );
 }

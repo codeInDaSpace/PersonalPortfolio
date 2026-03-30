@@ -45,17 +45,16 @@ export default function Contact() {
           transition={{ duration: 0.8, ease: "easeOut" }} 
                                 >
           <BriefcaseIcon className="w-10 mb-2 block mx-auto" />
-          <h1 className="sm:text-4xl text-3xl font-medium font-baloo text-gray-800 mb-4 text-center">
+          <h1 className="sm:text-5xl text-4xl font-baloo font-medium text-gray-800 mb-4 text-center">
             Hire Me
           </h1>
-          <p className="leading-relaxed mb-5 text-center font-mono">
-            If you'd like to get in contact for potential opportunities, feel
-            free to fill out this form!
-          </p>
+          <p className="font-mono text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-center text-gray-600">
+    If you'd like to get in contact for <span className="text-emerald-600 font-semibold">potential opportunities</span>, feel free to fill out this form!
+  </p>
           </motion.div>
 
           <div className="relative mb-4">
-            <label htmlFor="name" className="font-roboto leading-7 text-sm text-gray-800">
+            <label htmlFor="name" className="font-mono text-sm font-bold text-gray-700 mb-1 block">
               Name
             </label>
             <input
@@ -64,43 +63,49 @@ export default function Contact() {
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded-xl border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-white border border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 text-base font-mono outline-none text-gray-700 py-2 px-4 leading-8 transition-all duration-200 ease-in-out"
             />
           </div>
 
           <div className="relative mb-4">
-            <label htmlFor="email" className="font-roboto leading-7 text-sm text-gray-800">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded-xl border  focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
+  {/* LABEL: Switched to Mono and semi-bold for a technical look */}
+  <label htmlFor="email" className="font-mono text-sm font-bold text-gray-700 mb-1 block">
+    Email
+  </label>
+  
+  {/* INPUT: Removed amber, added emerald focus ring and Mono font */}
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    className="w-full bg-white border border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 text-base font-mono outline-none text-gray-700 py-2 px-4 leading-8 transition-all duration-200 ease-in-out"
+  />
+</div>
 
           <div className="relative mb-4">
-            <label htmlFor="message" className="font-roboto leading-7 text-sm text-gray-800">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="w-full bg-white/80 hover:bg-amber-50 border-4 border-amber-200 rounded-xl border focus:border-indigo-500 focus:ring-indigo-900 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            />
-          </div>
+  {/* LABEL: Consistent Mono style */}
+  <label htmlFor="message" className="font-mono text-sm font-bold text-gray-700 mb-1 block">
+    Message
+  </label>
+  
+  {/* TEXTAREA: Removed amber, added emerald focus ring and Mono font */}
+  <textarea
+    id="message"
+    name="message"
+    value={message}
+    onChange={(e) => setMessage(e.target.value)}
+    className="w-full bg-white border border-gray-200 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 h-32 text-base font-mono outline-none text-gray-700 py-2 px-4 resize-none leading-6 transition-all duration-200 ease-in-out"
+  />
+</div>
 
           <button
-            type="submit"
-            className="text-white font-roboto bg-cyan-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-xl text-lg"
-          >
-            Submit
-          </button>
+  type="submit"
+  className="text-white font-mono font-bold uppercase tracking-widest bg-gray-800 border-0 py-3 px-10 focus:outline-none hover:bg-emerald-600 rounded-xl text-lg transition-all duration-300 shadow-lg shadow-gray-200 hover:shadow-emerald-200/50"
+>
+  Submit
+</button>
         </form>
       </div>
     </section>

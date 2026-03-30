@@ -15,12 +15,12 @@ export default function Skills() {
                         >
                 <div className="text-center mb-20">
                     <CpuChipIcon className="w-10 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-baloo font-medium text-gray-800 mb-4">
-                        Skills &amp; Technologies
-                    </h1>
-                    <p className="text-base font-mono leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                        These are the Skills and Technologies I've gained through school, internships, and personal projects.
-                    </p>
+                <h1 className="sm:text-5xl text-4xl font-baloo font-medium text-gray-800 mb-4">
+                    Skills &amp; Technologies
+                </h1>
+                    <p className="font-mono text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600">
+    These are the <span className="text-emerald-600 font-semibold">Skills and Technologies</span> I've gained through school, internships, and personal projects.
+</p>
                 </div>
                 </motion.div>
                 <div className="flex flex-col sm:flex-row justify-between items-center">
@@ -34,16 +34,17 @@ export default function Skills() {
                     <div className="flex flex-wrap w-full sm:w-1/2">
                         {skills.map((skill) => (
                             <div key={skill.language} className="p-2 sm:w-1/2 w-full">
-                                <div className="bg-white/80 hover:bg-amber-50 border-4 border-amber-200 flex p-4 h-full items-center rounded-xl">
-                                    <img
-                                        alt={skill.language}
-                                        src={skill.languageIcon}
-                                        className="text-green-400 w-6 h-6 flex-shrink-0 mr-4"
-                                    />
-                                    <span className="title-font font-medium font-roboto text-gray-800 ">
-                                        {skill.language}
-                                    </span>
-                                </div>
+                                <div className="bg-white border border-gray-100 flex p-4 h-full items-center rounded-xl shadow-sm transition-all hover:border-emerald-200">
+                                <img
+                                    alt={skill.language}
+                                    src={skill.languageIcon}
+                                    className="w-6 h-6 flex-shrink-0 mr-4 group-hover:grayscale-0 transition-all"
+                                />
+                                {/* Switched font to Mono and adjusted size */}
+                                <span className="font-mono font-medium text-gray-700 text-lg">
+                                    {skill.language}
+                                </span>
+                            </div>
                             </div>
                         ))}
                     </div>
