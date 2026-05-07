@@ -24,8 +24,8 @@ export default function Projects () {
                         </span>
                         </h1>
                       <p className="lg:w-2/3 font-mono mx-auto leading-relaxed text-gray-600 text-lg">
-                                    I’ve built a range of systems, from <span className="text-emerald-700/80 font-semibold">complex data tools</span> and 
-                                    discord bots to <span className="text-emerald-700/80 font-semibold">full-stack apps</span> and NLP research. 
+                                    I’ve built a range of systems, from <span className="text-emerald-700/80 font-semibold">complex data tools</span>,  <span className="text-emerald-700/80 font-semibold">trading simulators</span> and 
+                                     <span className="text-emerald-700/80 font-semibold"> discord bots </span> to <span className="text-emerald-700/80 font-semibold">full-stack apps</span> and  <span className="text-emerald-700/80 font-semibold"> NLP research. </span> 
                                     Each project was a chance to solve real problems and level up my technical skills.
                                 </p>
                 </div>
