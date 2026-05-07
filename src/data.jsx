@@ -16,20 +16,20 @@ export const projects = [
         link:"https://github.com/Colep39/themepark-ms"
     },
     {
+        title:"Market Strategy Simulator",
+        subtitle:"C++, Python, and Pandas",
+        description:
+            "Built a quantitative backtesting project using historical SPY S&P 500 data. Developed a trading strategy using 10 day and 50 day moving averages with Python for data processing and C++ for portfolio simulation and equity curve generation.",
+        image: "./invest.png",
+        link:"https://github.com/codeInDaSpace/BackTesting"
+    },
+    {
         title:"Amazon Review Opinion Search Engine",
         subtitle:"Python, Pandas, and Re",
         description:
             "A Python tool that retrieves relevant Amazon reviews based on queries. Cleans data using pandas and regex, and applies boolean, proximity, and sentiment-based filtering methods.",
         image:"./amazon.jpg",
         link:"https://github.com/codeInDaSpace/AmazonOpinionEngine"
-    },
-    {
-        title:"PDF Financial Data Locator",
-        subtitle:"Python, Pandas, and Pytesseract",
-        description:
-            "Extracts financial data from PDFs such as IRS forms and reports. Developed during a Rice University research internship; the GitHub link provides access to code samples.",
-        image: "./python.png",
-        link:"https://github.com/codeInDaSpace"
     }
 ];
 
